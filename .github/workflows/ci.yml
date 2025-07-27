@@ -21,9 +21,9 @@ jobs:
       - name: Uinit Testing
         run: go test ./... -cover
     
-    name: style Tests
+    name: styles
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
