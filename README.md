@@ -1,4 +1,4 @@
-![Test coverage score](https://github.com/Dirza1/learn-cicd-starter/actions/workflows/auth_test.go/badge.svg)
+![Test coverage score](https://github.com/Dirza1/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
