@@ -20,7 +20,8 @@ jobs:
 
       - name: Uinit Testing
         run: go test ./... -cover
-    
+  
+  styles:
     name: styles
     runs-on: ubuntu-latest
 
