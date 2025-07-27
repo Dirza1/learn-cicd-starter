@@ -21,7 +21,7 @@ jobs:
       - name: Uinit Testing
         run: go test ./... -cover
   
-  styles:
+  Style:
     name: styles
     runs-on: ubuntu-latest
 
