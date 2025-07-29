@@ -33,7 +33,9 @@ jobs:
         run: go build
 
       - name: Authenticate gcloud CLI
-        run:  google-github-actions/auth 
+        run:  google-github-actions/auth
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}' 
       
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
