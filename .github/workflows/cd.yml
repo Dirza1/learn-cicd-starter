@@ -33,7 +33,7 @@ jobs:
         run: go build
 
       - name: Authenticate gcloud CLI
-        run:  google-github-actions/auth
+        uses:  google-github-actions/auth@V1
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}' 
       
