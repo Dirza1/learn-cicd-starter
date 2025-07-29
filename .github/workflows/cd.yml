@@ -31,11 +31,13 @@ jobs:
       
       - name: Run buildprod
         run: go build
+
+      - name: Authenticate gcloud CLI
+        run:  google-github-actions/auth 
       
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
         with:
-          service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           project_id: notely-467413
       
       - name: Check Auth
