@@ -32,6 +32,9 @@ jobs:
       - name: install Goose
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
       
+      - name: Add Go bin to PATH
+        run: echo "$HOME/go/bin" >> $GITHUB_PATH
+      
       - name: Run buildprod
         run: go build -o notely .
 
